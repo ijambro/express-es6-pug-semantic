@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title Express-ES6-Pug-Semantic
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css')
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js")
+    
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    header.ui.green.inverted.menu
+      a.item.logo(href="/")
+        img(src='https://camo.githubusercontent.com/2eb688a747805c9acd144faf728c8a30f86fc4ca5fb39e6528232f0372151364/68747470733a2f2f63646e2e7261776769742e636f6d2f7075676a732f7075672d6c6f676f2f656563343336636565386664396431373236643738333963626539396431663639343639326330632f5356472f7075672d66696e616c2d6c6f676f2d5f2d636f6c6f75722d3132382e737667')
+        span Express-ES6-Pug-Semantic
+      
+      block headernav
+
+    main.ui.container
+
+      if error_message
+        div.ui.negative.message
+          p.header= error_message 
+          
+      block content
+
+  script.
+    console.log("Loaded page");
+
+    function init() {
+      console.log("Initializing page");
+    }
+
+    init();

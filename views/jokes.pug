@@ -1,0 +1,11 @@
+extends template_full
+
+block content
+
+  h3= results.setup 
+  h3= results.delivery
+
+  br
+  details
+    summary Full joke JSON:
+    pre= JSON.stringify(results, null, 2)

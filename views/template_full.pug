@@ -1,0 +1,25 @@
+extends template_min
+
+block append headernav 
+
+  //- Left-side nav links
+  a.item(href="/users") 
+      i.users.icon
+      span Users
+  a.item(href="/jokes") 
+      i.smile.icon
+      span Jokes
+
+  //- Right-side nav links000
+  nav.ui.green.inverted.right.menu  
+    if isLoggedIn && userName
+      div.item 
+        i.user.circle.icon
+        span Welcome, #{userName}
+      a.item(href="/auth/logout") 
+        i.sign.out.alternate.icon
+        span Logout 
+    else
+      a.item(href="/auth/login")
+        i.sign.in.alternate.icon
+        span Login

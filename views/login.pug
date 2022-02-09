@@ -1,0 +1,52 @@
+extends template_min
+
+block content
+  
+  div.ui.centered.grid
+    div.ui.six.wide.column
+  
+      h3 Existing user:
+  
+      form.ui.form(action="/auth/login" method="POST")
+        div.field
+          div.ui.input
+            input(type="text" name="email" placeholder="Email address")
+        
+        div.field
+          div.ui.input
+            input(type="password" name="password" placeholder="Password")
+        
+        button.ui.button(type="submit") Login
+
+    div.ui.six.wide.column
+      
+      h3 New user:
+
+      form.ui.form(action="/auth/register" method="POST")
+        div.two.fields
+          div.field
+            div.ui.input
+              input(type="text" name="first_name" placeholder="First name")
+                  
+          div.field
+            div.ui.input
+              input(type="text" name="last_name" placeholder="Last name")
+        
+        div.field
+          div.ui.input
+            input(type="text" name="email" placeholder="Email address")
+        
+        div.field
+          div.ui.input
+            input(type="password" name="password" placeholder="Password")
+
+        div.field
+          div.ui.input
+            input(type="password" name="confirm_password" placeholder="Confirm Password")
+        
+        div.field
+          div.ui.checkbox
+            input(type="checkbox" name="acceptToS" tabindex="0")
+            label I agree to the Terms and Conditions
+        
+        button.ui.button(type="submit") Register

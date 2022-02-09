@@ -1,0 +1,8 @@
+body {
+  color: slategray;
+}
+
+header .logo span {
+  font-size: larger;
+  padding: 5px;
+}
