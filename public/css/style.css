@@ -6,3 +6,7 @@ header .logo span {
   font-size: larger;
   padding: 5px;
 }
+
+#nextButton {
+  margin-left: 10px;
+}

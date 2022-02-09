@@ -1,7 +1,7 @@
 {
-  "name": "express-es6-pug",
+  "name": "express-es6-pug-semantic",
   "version": "1.0.0",
-  "description": "Template for new full-stack projects",
+  "description": "Template for new full-stack Express projects using Pug views and Semantic UI",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jake Palmer",
-  "license": "ISC",
+  "license": "Apache 2.0",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
